@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Styles.css"/>
+    <script src="Utlan.js"></script>
+    <meta charset="utf-8">
+    <title>Utlån</title>
+  </head>
+  <body>
+    <h1> Utlån av Utstyr </h1>
+<p> Ansatt / Student Nr: <input id="Hilnummer" type="number" name="nummer"><br>
+    Hva som lånes ut: <input id="utlån" type="text" name="lån"><br>
+    Fra: <input min="1" max="31" onchange="restrictValue(this)" id="dato" class="boks" type="number">/<input min="1" max="12" onchange="restrictValue1(this)" id="maned" class="boks" type="number">/<input id="ar" value="2018" class="boks1" type="number" name="ar1"><br>
+    Til: <input min="1" max="31" onchange="restrictValue(this)" id="dato1" class="boks" type="number">/<input min="1" max="12" onchange="restrictValue1(this)" id="maned1" class="boks" type="number">/<input id="ar1" value="2018" class="boks1" type="number" name="ar2"><br>
+    Utlånt av: <input list="Users" name="Allusers" id="utlånboks" /></label>
+<datalist id="Users">
+  <option value="OM">Ole Martin</option>
+  <option value="OH">Ole Henrik</option>
+  <option value="OE">Ole Einar</option>
+  <option value="L">Lasse</option>
+  <option value="E">Emil</option>
+  <option value="ED">Edvard</option>
+  <option value="S">Ståle</option>
+</datalist><br>
+<button id="knapp" onclick="add()">Legg til</button>
+</p>
+<center>
+<h1> Utlånt </h1>
+<h4>
+  <table id="table">
+    <tr>
+      <th>Ansatt/Student Nr</th>
+      <th>Hva som lånes ut</th>
+      <th>Fra</th>
+      <th>Til</th>
+      <th>Utlånt av</th>
+    </tr>
+
+    </tr>
+  </table>
+</h4>
+</center>
+  </body>
+</html>

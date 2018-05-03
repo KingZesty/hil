@@ -1,0 +1,38 @@
+h1{
+  font-size: 40px;
+}
+
+.boks {
+ width: 30px;
+}
+
+.boks1 {
+  width: 50px;
+}
+
+#Hilnummer {
+  width: 80px;
+}
+
+#utlånboks {
+  width: 90px;
+}
+
+
+/* Table CSS (Lista) */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
