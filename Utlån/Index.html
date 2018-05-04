@@ -14,13 +14,13 @@
     Til: <input min="1" max="31" onchange="restrictValue(this)" id="dato1" class="boks" type="number">/<input min="1" max="12" onchange="restrictValue1(this)" id="maned1" class="boks" type="number">/<input id="ar1" value="2018" class="boks1" type="number" name="ar2"><br>
     Utlånt av: <input list="Users" name="Allusers" id="utlånboks" /></label>
 <datalist id="Users">
-  <option value="OM">Ole Martin</option>
-  <option value="OH">Ole Henrik</option>
-  <option value="OE">Ole Einar</option>
-  <option value="L">Lasse</option>
-  <option value="E">Emil</option>
-  <option value="ED">Edvard</option>
-  <option value="S">Ståle</option>
+  <option value="Ole Martin">OM</option>
+  <option value="Ole Henrik">OH</option>
+  <option value="Ole Einar">OE</option>
+  <option value="Lasse">L</option>
+  <option value="Emil">E</option>
+  <option value="Edvard">ED</option>
+  <option value="Ståle">S</option>
 </datalist><br>
 <button id="knapp" onclick="add()">Legg til</button>
 </p>
@@ -34,10 +34,22 @@
       <th>Fra</th>
       <th>Til</th>
       <th>Utlånt av</th>
-    </tr>
-
+      <th><div class="tab tab-btn">
+                <button onclick="tab1_To_tab2();">Lever</button>
+            </div></th>
     </tr>
   </table>
+</h4>
+<h1> Levert </h1>
+<h4>
+<table id="table2">
+  <tr>
+    <th>Ansatt/Student Nr</th>
+    <th>Hva som lånes ut</th>
+    <th>Fra</th>
+    <th>Til</th>
+    <th>Utlånt av</th>
+</table>
 </h4>
 </center>
   </body>
